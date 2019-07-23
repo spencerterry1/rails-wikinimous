@@ -1,0 +1,22 @@
+<h1>New article</h1>
+<form action="/articles" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <label for="title"><strong>Title</strong> </label>
+  <br>
+  <br>
+  <input type="text" name="article[title]" id="article_title">
+  <br>
+  <br>
+  <label for="content"><strong>Content</strong></label>
+  <br>
+  <br>
+  <textarea name="article[content]" id="article_content" cols="30" rows="10"></textarea>
+  <br>
+  <br>
+  <input type="submit">
+</form>
+
+<br>
+
+<span id="back-link"><%= link_to "Back", articles_path%>
+</span>

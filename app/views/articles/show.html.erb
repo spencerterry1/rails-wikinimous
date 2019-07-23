@@ -1,0 +1,17 @@
+<div class="article-title-card">
+  <h1><%= @article.title %></h1>
+   <%= @article.content %>
+  <br>
+  <br>
+  <%= link_to "Edit", article_edit_path(@article) %>
+
+  <%= link_to "Delete", article_delete_path(@article),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
+  <br>
+</div>
+
+<div>
+
+</div>
+
